@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Laptop Finder</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="min-h-screen bg-page text-ink">
+  <header id="header" class="bg-card shadow"></header>
+  <main class="mx-auto max-w-6xl p-4">
+    <div class="mb-4 flex flex-wrap items-center justify-between gap-2">
+      <h1 class="text-2xl font-bold">My favorites</h1>
+      <button id="clearBtn" class="btn-action">Clear all</button>
+    </div>
+    <p id="totals" class="mb-4 font-semibold"></p>
+    <div id="list" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </main>
+  <footer class="p-4 text-center text-sm opacity-70">SW302 – Assignment 2</footer>
+  <script type="module" src="src/js/favorites.js"></script>
+</body>
+</html>

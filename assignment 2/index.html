@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Laptop Finder</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="min-h-screen bg-page text-ink">
+  <header id="header" class="bg-card shadow"></header>
+  <main class="mx-auto max-w-6xl p-4">
+    <section class="py-10 text-center">
+      <h1 class="text-3xl font-bold md:text-5xl">Find your perfect student laptop</h1>
+      <p class="mt-4 opacity-80">Browse, filter, save favorites and compare laptops side by side.</p>
+    </section>
+    <section class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+      <div class="laptop-card"><p class="text-sm">Laptops</p><p id="statCount" class="text-2xl font-bold text-accent">...</p></div>
+      <div class="laptop-card"><p class="text-sm">Lowest price</p><p id="statLow" class="text-2xl font-bold text-accent">...</p></div>
+      <div class="laptop-card"><p class="text-sm">Best battery</p><p id="statBattery" class="text-2xl font-bold text-accent">...</p></div>
+      <div class="laptop-card"><p class="text-sm">Saved favorites</p><p id="statFav" class="text-2xl font-bold text-accent">0</p></div>
+    </section>
+    <section class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <a href="laptops.html" class="btn-action p-4 text-center">Browse catalogue</a>
+      <a href="details.html?id=1" class="btn-action p-4 text-center">Example details</a>
+      <a href="favorites.html" class="btn-action p-4 text-center">My favorites</a>
+      <a href="compare.html" class="btn-action p-4 text-center">Compare</a>
+    </section>
+  </main>
+  <footer class="p-4 text-center text-sm opacity-70">SW302 – Assignment 2</footer>
+  <script type="module" src="src/js/home.js"></script>
+</body>
+</html>

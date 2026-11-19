@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Laptop Finder</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="min-h-screen bg-page text-ink">
+  <header id="header" class="bg-card shadow"></header>
+  <main class="mx-auto max-w-6xl p-4">
+    <h1 class="mb-4 text-2xl font-bold">Laptop catalogue</h1>
+    <div id="controls" class="mb-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-5">
+      <input id="search" type="text" placeholder="Search name or brand" class="field">
+      <select id="category" class="field">
+        <option value="">All categories</option>
+        <option>ultrabook</option><option>gaming</option><option>2-in-1</option><option>creator</option><option>budget</option>
+      </select>
+      <input id="maxPrice" type="number" placeholder="Max price ($)" class="field">
+      <select id="minRam" class="field">
+        <option value="0">Any RAM</option><option value="8">8 GB+</option><option value="16">16 GB+</option><option value="32">32 GB+</option>
+      </select>
+      <select id="sort" class="field">
+        <option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option>
+        <option value="batteryHours-desc">Battery: longest first</option><option value="batteryHours-asc">Battery: shortest first</option>
+        <option value="weightKg-asc">Weight: lightest first</option><option value="weightKg-desc">Weight: heaviest first</option>
+      </select>
+    </div>
+    <p id="count" class="mb-4 font-semibold"></p>
+    <div id="list" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </main>
+  <footer class="p-4 text-center text-sm opacity-70">SW302 – Assignment 2</footer>
+  <script type="module" src="src/js/laptops.js"></script>
+</body>
+</html>
